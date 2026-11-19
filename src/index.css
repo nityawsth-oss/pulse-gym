@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F8F5EF;
+    color: #14110B;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+/* ============================================================
+   GMS WORKSPACE — LIGHT THEME CARD & BUTTON SYSTEM
+   ============================================================ */
+
+/* Light Card (white card, cream border) */
+.figma-card, .gms-card {
+  background-color: #FFFFFF;
+  border: 1px solid #ECE7DC;
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgba(20,17,11,0.04);
+}
+
+/* GMS Primary Button (gold) */
+.figma-btn-primary, .gms-btn-primary {
+  background-color: #D9A441;
+  color: #14110B;
+  font-weight: 600;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 13px;
+  transition: all 0.15s ease-out;
+}
+.figma-btn-primary:hover, .gms-btn-primary:hover {
+  background-color: #E5B55A;
+}
+
+/* GMS Secondary Button (white outlined) */
+.figma-btn-secondary, .gms-btn-secondary {
+  background-color: #FFFFFF;
+  color: #14110B;
+  border: 1px solid #ECE7DC;
+  font-weight: 500;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 13px;
+  transition: all 0.15s ease-out;
+}
+.figma-btn-secondary:hover, .gms-btn-secondary:hover {
+  background-color: #F8F5EF;
+  border-color: #DDD6C7;
+}
+
+/* GMS Input (light) */
+.gms-input {
+  height: 38px;
+  background-color: #FFFFFF;
+  border: 1px solid #DDD6C7;
+  border-radius: 10px;
+  padding: 0 12px;
+  font-size: 13px;
+  color: #14110B;
+  transition: border-color 0.15s ease;
+  width: 100%;
+}
+.gms-input:focus {
+  outline: none;
+  border-color: #D9A441;
+  box-shadow: 0 0 0 2px rgba(217,164,65,0.15);
+}
+.gms-input::placeholder { color: #B9B1A0; }
+
+/* GMS Table */
+.gms-th { font-size: 11px; color: #7A7367; font-weight: 600; padding: 10px 12px; border-bottom: 1px solid #ECE7DC; text-transform: uppercase; letter-spacing: 0.04em; }
+.gms-td { font-size: 13px; color: #14110B; padding: 11px 12px; border-bottom: 1px solid #F0EDE7; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F5EF;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDD6C7;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B9B1A0;
+}
+
+/* Exact Hero & Auth Dark Gradient */
+.hero-gradient {
+  background: linear-gradient(135deg, #0A0906 0%, #2B2110 100%);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #D9A441;
+  color: #14110B;
+  font-weight: 600;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.15s ease-out;
+}
+.btn-primary:hover {
+  background-color: #E5B55A;
+}
+
+.btn-secondary {
+  background-color: #FFFFFF;
+  color: #14110B;
+  border: 1px solid #ECE7DC;
+  font-weight: 500;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.15s ease-out;
+}
+.btn-secondary:hover {
+  background-color: #F8F5EF;
+  border-color: #DDD6C7;
+}
+
+.btn-outline-gold {
+  background-color: transparent;
+  color: #D9A441;
+  border: 1px solid #D9A441;
+  font-weight: 600;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.15s ease-out;
+}
+.btn-outline-gold:hover {
+  background-color: rgba(217, 164, 65, 0.1);
+}
+
+/* Inputs */
+.spec-input {
+  height: 44px;
+  background-color: #FFFFFF;
+  border: 1px solid #DDD6C7;
+  border-radius: 10px;
+  padding: 0 14px;
+  font-size: 14px;
+  color: #14110B;
+  transition: border-color 0.15s ease;
+}
+.spec-input:focus {
+  outline: none;
+  border-color: #D9A441;
+  box-shadow: 0 0 0 2px rgba(217, 164, 65, 0.2);
+}
+
+/* Status Chips */
+.chip-active {
+  background-color: #E7F7EE;
+  color: #16A34A;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.chip-warning {
+  background-color: #FEF3E0;
+  color: #D97706;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.chip-danger {
+  background-color: #FDECEC;
+  color: #DC2626;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
